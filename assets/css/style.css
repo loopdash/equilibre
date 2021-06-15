@@ -410,19 +410,12 @@ button-pill.arrow-right-rev:hover::after {
     text-decoration: none;
     line-height: 2.75;
 }
-.button:hover {
-	background-color: #fff;
-	color: #015a84;
-    text-decoration: none;
-}
+
 .button.btn-rev {
 background-color: #fff;
     color: #015a84;
 }
-.button.btn-rev:hover {
-    background-color: #015a84;
-    color: #fff;
-}
+
 .show-more {
     display: none;
     opacity: 0;
