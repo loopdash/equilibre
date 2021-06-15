@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Equilibre</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="shortcut icon" href="assets/images/favicon.ico" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="assets/js/scripts.js"></script>
+</head>
+<body>
+<style>
+.se-pre-con {
+    position: fixed;
+    z-index: 1000000000;
+    background-color: rgba(0,90,132,.88);
+    overflow: hidden;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-right: 18px;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.se-pre-con .image {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    transition: opacity .3s;
+}
+
+    </style>
+<script>
+(function($){
+    $(window).on( 'load', function(e) {
+        $(".se-pre-con .image").css( {
+            "opacity": "0"
+        } );
+        $(".se-pre-con").fadeOut();
+        $("body").css( {
+            "overflow-y": "visible", "height": "auto"
+        } );
+        
+        console.log( 'loaded.' );
+    });
+})(jQuery);
+</script>
+<dv class="se-pre-con">
+  <div class="image"> <img src="assets/images/loading-overlay.png" alt="loading..."></div>
+</dv>
+<a href="#" class="mobile-toggle d-block d-lg-none" aria-expanded="false"><span class="mobile-icon-line mobile-icon-top"></span><span class="screen-reader-text">Mobile Navigation Toggle</span><span class="mobile-icon-line mobile-icon-bottom"></span></a>
+<div id="mobile_nav" class="mobile-nav-container" aria-hidden="true"></div>
+<header class="main-header sticky-header">
+  <div class="p-4 p-lg-5">
+    <div class="row">
+      <div class="col-md-3 csc-logo"><a title="Cleveland Sight Center Website" class="h-100 d-block screen-reader-text" href="http://www.clevelandsightcenter.org/">Cleveland Sight Center</a></div>
+      <div class="d-none d-lg-flex col-md-9 justify-content-end">
+        <nav class="text-md-right primary-nav-container">
+          <ul class="primary-nav">
+            <li><a href="#">About CSC</a></li>
+            <li><a href="#">Message From Leadership</a></li>
+            <li><a href="#">What Did We Do?</a></li>
+            <li><a href="#">What Did We Learn?</a></li>
+            <li><a href="#">Thank You!</a></li>
+            <li><a href="#">Board of Trustees</a></li>
+            <li><a href="#">The Visionaries</a></li>
+            <li><a href="#">CSC Leadership</a></li>
+            <li><a href="#">2020 Financials</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="video-container">
+    <video poster="assets/images/thumbnails/production ID_3968071.webmhd.png" autoplay preload="metadata" muted>
+        <source type="video/webm" src="assets/images/production ID_3968071.webm" />
+        <source type="video/mp4" src="assets/images/production ID_3968071.mp4" />
+    </video>
+    </div>
+    
+<footer>
+    
+    
+</footer>
+<div class="breakflag"></div>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+</body>
+</html>
